@@ -894,7 +894,7 @@ body.no-bgbody {
       width: 168%;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     #edit-cat{
       width: 100%;
     }
