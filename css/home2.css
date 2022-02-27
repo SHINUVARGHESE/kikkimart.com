@@ -889,6 +889,11 @@ body.no-bgbody {
 
 .pattern-45 {
   background-image: url("../image/patterns/45.png"); }
+  @media (max-width: 1768px) {
+    #edit-cat{
+      width: 168%;
+    }
+  }
 /* Preloading Screen
  --------------------------------------- */
 .loader-content {
