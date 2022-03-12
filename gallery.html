@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Basic page needs
+        ============================================ -->
+        <title>Kikki Mart</title>
+    
+        <!-- Mobile specific metas
+        ============================================ -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+        <!-- Favicon
+        ============================================ -->
+    
+        <link rel="shortcut icon" type="image/png" href="image/catalog/favicon.ico" />
+    
+    
+        <!-- Libs CSS
+        ============================================ -->
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+        <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+        <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+        <link href="css/themecss/lib.css" rel="stylesheet">
+        <link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+        <link href="js/minicolors/miniColors.css" rel="stylesheet">
+    
+        <!-- Theme CSS
+        ============================================ -->
+        <link href="css/themecss/so_searchpro.css" rel="stylesheet">
+        <link href="css/themecss/so_megamenu.css" rel="stylesheet">
+        <link href="css/themecss/so-categories.css" rel="stylesheet">
+        <link href="css/themecss/so-listing-tabs.css" rel="stylesheet">
+        <link href="css/themecss/so-category-slider.css" rel="stylesheet">
+        <link href="css/themecss/so-newletter-popup.css" rel="stylesheet">
+    
+        <link href="css/footer/footer2.css" rel="stylesheet">
+        <link href="css/header/header2.css" rel="stylesheet">
+        <link id="color_scheme" href="css/home2.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+    
+        <!-- Google web fonts
+        ============================================ -->
+        <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+            body {
+                font-family: 'Poppins', sans-serif
+            }
+        </style>
+    
+    </head>
+
+<body class="res layout-1">
+
+    <div id="wrapper" class="wrapper-fluid banners-effect-5">
+
+
+        <!-- Header Container  -->
+        <header id="header" class=" typeheader-2">
+            <!-- Header Top -->
+            <div class="header-top hidden-compact">
+                <div class="container">
+                    <div class="row">
+                        <div class="header-top-left col-lg-8 col-md-8 col-sm-6 col-xs-3">
+                            <div class="hidden-md hidden-sm hidden-xs welcome-msg">Welcome to KikkiMart !</div>
+                            <div class="telephone hidden-xs hidden-sm hidden-md">
+                                <ul>
+                                    <li><i class="fa fa-envelope"></i>Email: abvpakkattu@gmail.com</li>
+                                    <li><i class="fa fa-phone"></i>Mobile: (+91) 8281331967</li>
+                                </ul>
+                            </div>
+                            <ul class="account hidden-lg ">
+                                <li class="account" id="my_account">
+                                    <a href="#" title="My Account " class="btn-xs dropdown-toggle"
+                                        data-toggle="dropdown"> <span class="hidden-xs">My Account </span> <span
+                                            class="fa fa-caret-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu ">
+                                        <li><a href="register.html"><i class="fa fa-user"></i> Register</a></li>
+                                        <li><a href="login.html"><i class="fa fa-pencil-square-o"></i> Login</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="hidden-lg " style="float:right; padding: 15px;">
+                                <li>
+                                    <h5>Welcome to KikkiMart !</h5>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //Header Top -->
+
+            <!-- Header center -->
+            <div class="header-middle">
+                <div class="container">
+                    <div class="row">
+                        <!-- Logo -->
+                        <div class="navbar-logo col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <div class="logo"><a href="index.html"><img src="image/catalog/logo2.png" title="Your Store"
+                                        alt="Your Store" /></a></div>
+                        </div>
+                        <!-- //end Logo -->
+                        <!-- Search -->
+                        <div class="middle2 col-lg-6 col-md-7 col-sm-6 col-xs-6">
+                            <div class="search-header-w">
+                                <div class="icon-search hidden-lg hidden-md"><i class="fa fa-search"></i></div>
+                                <div id="sosearchpro" class="sosearchpro-wrapper so-search ">
+                                    <form method="GET" action="index.html">
+                                        <div id="search0" class="search input-group form-group">
+                                            <input class="autosearch-input form-control" type="text" value="" size="50"
+                                                autocomplete="off" placeholder="Keyword here..." name="search">
+                                            <span class="input-group-btn">
+                                                <button onclick="myFunction()" type="submit"
+                                                    class="button-search btn btn-primary" name="submit_search"><i
+                                                        class="fa fa-search"></i><span>Search</span></button>
+                                            </span>
+                                        </div>
+                                        <input type="hidden" name="route" value="product/search" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            function myFunction() {
+                                alert("You are searched a wrong keyword !");
+                            }
+                        </script>
+                        <!-- //end Search -->
+
+                        <div class="middle3 col-lg-3 col-md-2 col-sm-6 col-xs-6">
+                            <!--cart-->
+                            <div class="shopping_cart">
+                                <div id="cart" class="btn-shopping-cart">
+
+                                    <!-- <a data-loading-text="Loading... " class="btn-group top_cart dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                <div class="shopcart">
+                                    <span class="icon-c">
+                                    <i class="fa fa-shopping-bag"></i>
+                                  </span>
+                                    <div class="shopcart-inner">
+                                        <p class="text-shopping-cart">
+                                            My cart
+                                        </p>
+
+                                        <span class="total-shopping-cart cart-total-full">
+                                            <span class="items_cart">0</span><span class="items_cart2"> item(s)</span><span class="items_carts"> (₹0.00) </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a> -->
+
+                                    <ul class="dropdown-menu pull-right shoppingcart-box" role="menu">
+                                        <li>
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center" style="width:70px">
+                                                            <a href="product.html">
+                                                                <img src="image/catalog/demo/product/80/1.jpg"
+                                                                    style="width:70px" alt="Yutculpa ullamcon"
+                                                                    title="Yutculpa ullamco" class="preview">
+                                                            </a>
+                                                        </td>
+                                                        <td class="text-left"> <a class="cart_product_name"
+                                                                href="product.html">Yutculpa ullamco</a>
+                                                        </td>
+                                                        <td class="text-center">x1</td>
+                                                        <td class="text-center">$80.00</td>
+                                                        <td class="text-right">
+                                                            <a href="product.html" class="fa fa-edit"></a>
+                                                        </td>
+                                                        <td class="text-right">
+                                                            <a onclick="cart.remove('2');"
+                                                                class="fa fa-times fa-delete"></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center" style="width:70px">
+                                                            <a href="product.html">
+                                                                <img src="image/catalog/demo/product/80/2.jpg"
+                                                                    style="width:70px" alt="Xancetta bresao"
+                                                                    title="Xancetta bresao" class="preview">
+                                                            </a>
+                                                        </td>
+                                                        <td class="text-left"> <a class="cart_product_name"
+                                                                href="product.html">Xancetta bresao</a>
+                                                        </td>
+                                                        <td class="text-center">x1</td>
+                                                        <td class="text-center">$60.00</td>
+                                                        <td class="text-right">
+                                                            <a href="product.html" class="fa fa-edit"></a>
+                                                        </td>
+                                                        <td class="text-right">
+                                                            <a onclick="cart.remove('1');"
+                                                                class="fa fa-times fa-delete"></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <table class="table table-bordered">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-left"><strong>Sub-Total</strong>
+                                                            </td>
+                                                            <td class="text-right">$140.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left"><strong>Eco Tax (-2.00)</strong>
+                                                            </td>
+                                                            <td class="text-right">$2.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left"><strong>VAT (20%)</strong>
+                                                            </td>
+                                                            <td class="text-right">$20.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left"><strong>Total</strong>
+                                                            </td>
+                                                            <td class="text-right">$162.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="text-right"> <a class="btn view-cart" href="cart.html"><i
+                                                            class="fa fa-shopping-cart"></i>View
+                                                        Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart"
+                                                        href="checkout.html"><i class="fa fa-share"></i>Checkout</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!--//cart-->
+
+                            <ul class="login-w hidden-md hidden-sm hidden-xs">
+                                <li>My Account</li>
+                                <li class="logout"><a href="login.html">Login</a> / <a href="register.html">Register</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- //Header center -->
+
+            <!-- Header Bottom -->
+            <div class="header-bottom hidden-compact">
+                <div class="container">
+                    <div class="row">
+                        <!-- Main menu -->
+                        <div>
+                            <div class="responsive so-megamenu megamenu-style-dev">
+                                <nav class="navbar-default">
+                                    <div class=" container-megamenu  horizontal open ">
+                                        <div class="navbar-header col-sm-9">
+                                            <button type="button" id="show-megamenu" data-toggle="collapse"
+                                                class="navbar-toggle">
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                        </div>
+
+                                        <div class="megamenu-wrapper">
+                                            <span id="remove-megamenu" class="fa fa-times"></span>
+                                            <div class="megamenu-pattern">
+                                                <div class="container-mega">
+                                                    <ul class="megamenu" data-transition="slide"
+                                                        data-animationtime="250">
+                                                        <li>
+                                                            <a href="index.html" style="color: #ff5c01;">Home</a>
+                                                        </li>
+                                                        <li class="">
+                                                            <p class="close-menu"></p>
+                                                            <a href="about-us-3.html" class="clearfix">
+                                                                <strong>About Us</strong>
+                                                                <span class="label"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="">
+                                                            <p class="close-menu"></p>
+                                                            <a href="contact.html" class="clearfix">
+                                                                <strong>Contact Us</strong>
+                                                                <span class="label"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="with-sub-menu hover pull-right">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                <strong>Kitchen Accessories</strong>
+
+
+                                                                <b class="caret"></b>
+                                                            </a>
+                                                            <div class="sub-menu" style="width: 100%; display: none;">
+                                                                <div class="content">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <div class="row">
+                                                                                <div class="col-md-3 img img1">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b21.jpg"
+                                                                                            alt="banner1"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img2">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b22.jpg"
+                                                                                            alt="banner2"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img3">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b23.jpg"
+                                                                                            alt="banner3"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img4">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b24.jpg"
+                                                                                            alt="banner4"></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <a href="#"
+                                                                                class="title-submenu">Cookers</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Hawkins
+                                                                                                    5L Stainless Steel
+                                                                                                    Pressure Cooker.</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Pigeon
+                                                                                                    by Stovekraft 3L
+                                                                                                    Aluminium Pressure
+                                                                                                    Cooker.</a></li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Hawkins
+                                                                                                    Contura Hard
+                                                                                                    Anodised 3L
+                                                                                                    Aluminium Pressure
+                                                                                                    Cooker.</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Hawkins
+                                                                                                    Miss Mary 3L
+                                                                                                    Aluminium Pressure
+                                                                                                    Cooker.</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Steal
+                                                                                Plates</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Titox
+                                                                                                    Stainless Steel
+                                                                                                    Dinner Plate</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Springway-
+                                                                                                    Brand of
+                                                                                                    Happiness</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Sumeet
+                                                                                                    Stainless Steel
+                                                                                                    Heavy Gauge Small
+                                                                                                    Halwa Plates with
+                                                                                                    Mirror Finish</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Neelam
+                                                                                                    Stainless Steel
+                                                                                                    Buffet Plate</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Denner
+                                                                                Set</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">La
+                                                                                                    Opala</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Cello</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Eagleware</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Larah</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Others</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Spoons</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Glass</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Lunch Box</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Jugs</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="with-sub-menu hover pull-right">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                <strong>Vegitables</strong>
+
+
+                                                                <b class="caret"></b>
+                                                            </a>
+                                                            <div class="sub-menu" style="width: 100%; display: none;">
+                                                                <div class="content">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <div class="row">
+                                                                                <div class="col-md-3 img img1">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b17.jpg"
+                                                                                            alt="banner1"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img2">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b18.jpg"
+                                                                                            alt="banner2"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img3">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b19.jpg"
+                                                                                            alt="banner3"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img4">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b20.jpg"
+                                                                                            alt="banner4"></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Veg
+                                                                                Kits</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">80.00
+                                                                                                    Rs Kit</a></li>
+                                                                                            <li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#"
+                                                                                class="title-submenu">Organic</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Kovakkai</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Vendakkai</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Vazhuthananga</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Cheera</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Frozen
+                                                                                Vegitables</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Peas</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Broccoli</a>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Others</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Onion</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Tomato</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Potato</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Pumpkin</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="with-sub-menu hover pull-right">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                <strong>Foothware</strong>
+
+
+                                                                <b class="caret"></b>
+                                                            </a>
+                                                            <div class="sub-menu" style="width: 100%; display: none;">
+                                                                <div class="content">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <div class="row">
+                                                                                <div class="col-md-3 img img1">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b13.jpg"
+                                                                                            alt="banner1"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img2">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b14.jpg"
+                                                                                            alt="banner2"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img3">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b15.jpg"
+                                                                                            alt="banner3"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img4">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b16.jpg"
+                                                                                            alt="banner4"></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Mens</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Woodland</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Puma</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Clarks</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Nike</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Womens</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Inc.5</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Catwalk</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Liberty</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Khadims</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Kids</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Reebok</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Kittens</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Adidas</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Skeehers</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Shoes</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Nike</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Bata</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Adidas</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Puma</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="with-sub-menu hover pull-right">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                <strong>Fruits</strong>
+
+
+                                                                <b class="caret"></b>
+                                                            </a>
+                                                            <div class="sub-menu" style="width: 100%; display: none;">
+                                                                <div class="content">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <div class="row">
+                                                                                <div class="col-md-3 img img1">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b9.jpg"
+                                                                                            alt="banner1"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img2">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b10.jpg"
+                                                                                            alt="banner2"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img3">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b11.jpg"
+                                                                                            alt="banner3"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img4">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b12.jpg"
+                                                                                            alt="banner4"></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Apple</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Gala</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Himachal
+                                                                                                    Apple</a></li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Green
+                                                                                                    Apple</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Granny
+                                                                                                    Smith</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Grapes</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Globe</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Seedless
+                                                                                                    Grapes</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Green
+                                                                                                    Grapes</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Wine
+                                                                                                    Grapes</a></li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Berrys</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">StrawBerry</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">BlueBerry</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">BlackBerry</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Seasonal
+                                                                                Fruits</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Mango</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">JackFruit</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Kiwi</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Rambutan</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="with-sub-menu hover pull-right">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                <strong>Bevarage</strong>
+
+
+                                                                <b class="caret"></b>
+                                                            </a>
+                                                            <div class="sub-menu" style="width: 100%; display: none;">
+                                                                <div class="content">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <div class="row">
+                                                                                <div class="col-md-3 img img1">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b5.jpg"
+                                                                                            alt="banner1"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img2">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b6.jpg"
+                                                                                            alt="banner2"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img3">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b7.jpg"
+                                                                                            alt="banner3"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img4">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b8.jpg"
+                                                                                            alt="banner4"></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Soft
+                                                                                Drinks</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Pepsi</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Coca
+                                                                                                    Cola</a></li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Appy
+                                                                                                    Fizz</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">7UP</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Non
+                                                                                Alcoholic Beers</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Coolberg</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Heineken</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Knock
+                                                                                                    Out</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Doul</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Tea</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">AVT</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Kannen
+                                                                                                    Devan</a></li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Brooke
+                                                                                                    Bond</a></li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Ripple</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Juices</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Tropicana</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">B
+                                                                                                    Natural</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Maa</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Frooti</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="with-sub-menu hover pull-right">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                <strong>Spices</strong>
+
+
+                                                                <b class="caret"></b>
+                                                            </a>
+                                                            <div class="sub-menu" style="width: 100%; display: none;">
+                                                                <div class="content">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <div class="row">
+                                                                                <div class="col-md-3 img img1">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b1.jpg"
+                                                                                            alt="banner1"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img2">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b3.jpg"
+                                                                                            alt="banner2"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img3">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b2.jpg"
+                                                                                            alt="banner3"></a>
+                                                                                </div>
+                                                                                <div class="col-md-3 img img4">
+                                                                                    <a href="#"><img
+                                                                                            src="image/catalog/menu/megabanner/b4.jpg"
+                                                                                            alt="banner4"></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Whole
+                                                                                Spices</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Black
+                                                                                                    Pepper</a></li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Cinnamon</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Cumin</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Fennel</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Curry
+                                                                                Powders</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Turmeric
+                                                                                                    Powder</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Chilli
+                                                                                                    Powder</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Coriander
+                                                                                                    Powder</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Pepper
+                                                                                                    Powder</a></li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#"
+                                                                                class="title-submenu">Organic</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">
+                                                                                                    Organic Black
+                                                                                                    Pepper</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Organic
+                                                                                                    Herbal Spices</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Organic
+                                                                                                    Parsley</a></li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <a href="#" class="title-submenu">Brands</a>
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Eastern</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Brahmins</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Kitchen
+                                                                                                    Trushers</a>
+                                                                                            </li>
+                                                                                            <li><a href="#"
+                                                                                                    class="main-menu">Saras</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- //end Main menu -->
+
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+        <!-- //Header Container  -->
+
+        <!-- Main Container  -->
+        <div class="main-container container">
+            <ul class="breadcrumb">
+                <li><a href="#"><i class="fa fa-home"></i></a></li>
+                <li><a href="#">Gallery</a></li>
+
+            </ul>
+
+            <div class="row">
+                <!--Left Part Start -->
+
+
+                <!--Middle Part Start-->
+                <div id="content"  class="col-md-12">
+                    <div class="blog-header">
+                        <h3>Our Gallery</h3>
+
+                    </div>
+                    <div class="blog-category clearfix">
+
+                        <div class="blog-listitem row">
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                        <a class="popup-gallery" href="image/gallery/1.JPG">
+                                            <img src="image/gallery/1.JPG"
+                                                alt="Biten demons lector in henderit in vulp" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                        <a class="popup-gallery" href="image/gallery/2.JPG">
+                                            <img src="image/gallery/2.JPG"
+                                                alt="Biten demons lector in henderit in vulp" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                                <a class="popup-gallery" href="image/gallery/3.JPG">
+                                                    <img src="image/gallery/3.JPG"
+                                                        alt="Duis autem vel eum tempor invidunt ut labore et " />
+                                                </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                                <a class="popup-gallery" href="image/gallery/4.JPG">
+                                                    <img src="image/gallery/4.JPG"
+                                                        alt="enim ad minim veniam  justo duo dolores et ea" />
+                                                </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                                <a class="popup-gallery" href="image/gallery/5.JPG">
+                                                    <img src="image/gallery/5.JPG"
+                                                        alt="enim ad minim veniam  justo duo dolores et ea" />
+                                                </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                            <div>
+                                                <a class="popup-gallery" href="image/gallery/6.JPG">
+                                                    <img src="image/gallery/6.JPG" alt="Kire tuma feugiat " />
+                                                </a>
+                                            </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                                <a class="popup-gallery" href="image/gallery/7.JPG">
+                                                    <img src="image/gallery/7.JPG"
+                                                        alt="Lorem ipsum dolor sit amet" />
+                                                </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                                <a class="popup-gallery" href="image/gallery/8.JPG">
+                                                    <img src="image/gallery/8.JPG"
+                                                        alt="Lorem ipsum dolor sit amet" />
+                                                </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                                <a class="popup-gallery" href="image/gallery/9.JPG">
+                                                    <img src="image/gallery/9.JPG"
+                                                        alt="enim ad minim veniam  justo duo dolores et ea" />
+                                                </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                                <a class="popup-gallery" href="image/gallery/10.JPG">
+                                                    <img src="image/gallery/10.JPG"
+                                                        alt="enim ad minim veniam  justo duo dolores et ea" />
+                                                </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                                <a class="popup-gallery" href="image/gallery/11.JPG">
+                                                    <img src="image/gallery/11.JPG"
+                                                        alt="enim ad minim veniam  justo duo dolores et ea" />
+                                                </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                                <a class="popup-gallery" href="image/gallery/12.JPG">
+                                                    <img src="image/gallery/12.JPG"
+                                                        alt="enim ad minim veniam  justo duo dolores et ea" />
+                                                </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                                <a class="popup-gallery" href="image/gallery/13.JPG">
+                                                    <img src="image/gallery/13.JPG"
+                                                        alt="enim ad minim veniam  justo duo dolores et ea" />
+                                                </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                                <a class="popup-gallery" href="image/gallery/14.JPG">
+                                                    <img src="image/gallery/14.JPG"
+                                                        alt="enim ad minim veniam  justo duo dolores et ea" />
+                                                </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                                <a class="popup-gallery" href="image/gallery/15.JPG">
+                                                    <img src="image/gallery/15.JPG"
+                                                        alt="enim ad minim veniam  justo duo dolores et ea" />
+                                                </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                                <a class="popup-gallery" href="image/gallery/16.JPG">
+                                                    <img src="image/gallery/16.JPG"
+                                                        alt="enim ad minim veniam  justo duo dolores et ea" />
+                                                </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                                <a class="popup-gallery" href="image/gallery/17.JPG">
+                                                    <img src="image/gallery/17.JPG"
+                                                        alt="enim ad minim veniam  justo duo dolores et ea" />
+                                                </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="blog-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="blog-item-inner clearfix">
+                                    <div class="itemBlogImg clearfix">
+                                                <a class="popup-gallery" href="image/gallery/18.JPG">
+                                                    <img src="image/gallery/18.JPG"
+                                                        alt="enim ad minim veniam  justo duo dolores et ea" />
+                                                </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--Middle Part End-->
+        </div>
+        <!-- //Main Container -->
+
+
+        <!-- Footer Container -->
+        <footer class="footer-container typefooter-2">
+            <!-- Footer Top Container -->
+
+            <div class="container">
+                <div class="row row_cd6l  footer-top ">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col_mt2u  col-style">
+                        <div class="livechat">
+                            <a><img src="image/catalog/banners/f2-livechat.png" alt="image"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col_1gyn  col-style">
+                        <div class="socials-w">
+                            <h2>Follow socials</h2>
+                            <ul class="socials">
+                                <li class="facebook"><a href="https://www.facebook.com/kikkimartpage" target="_blank"><i
+                                            class="fa fa-facebook"></i><span>Facebook</span></a></li>
+                                <li class="facebook"><a target="_blank"><i
+                                            class="fa fa-whatsapp"></i><span>whatsapp</span></a></li>
+                                <li class="twitter"><a target="_blank"><i
+                                            class="fa fa-twitter"></i><span>Twitter</span></a></li>
+
+                                <li class="pinterest"><a target="_blank"><i
+                                            class="fa fa-instagram"></i><span>Instagram</span></a></li>
+                                <li class="youtube"><a target="_blank"><i
+                                            class="fa fa-envelope"></i><span>Mail</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col_jams  hidden-sm hidden-xs">
+                        <div class="fbanner">
+                            <a href="#"><img src="image/catalog/banners/f2-banner.png" alt="image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /Footer Top Container -->
+
+            <div class="footer-middle ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-style">
+                            <div class="box-information box-footer">
+                                <div class="module clearfix">
+                                    <h3 class="modtitle">Pages</h3>
+                                    <div class="modcontent">
+                                        <ul class="menu">
+                                            <li><a href="contact.html">Contact Us</a></li>
+                                            <li><a href="about-us-3.html">About Us</a></li>
+                                            <li><a href="#">Home</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-style">
+                            <div class="box-account box-footer">
+                                <div class="module clearfix">
+                                    <h3 class="modtitle">Categories</h3>
+                                    <div class="modcontent">
+                                        <ul class="menu">
+                                            <li><a href="#">Fruits</a></li>
+                                            <li><a href="#">Vegitables</a></li>
+                                            <li><a href="#">Frozen</a></li>
+                                            <li><a href="#">Fancy Items</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="box-service box-footer">
+                                <div class="module clearfix">
+                                    <h3 class="modtitle">Socials</h3>
+                                    <div class="modcontent">
+                                        <ul class="menu">
+                                            <li><a href="#">Facebook</a></li>
+                                            <li><a href="#">whatsapp</a></li>
+                                            <li><a href="#">Twitter</a></li>
+                                            <li><a href="#">Instagram</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="box-service box-footer">
+                                <div class="module clearfix">
+                                    <h3 class="modtitle">Contack Info</h3>
+                                    <div>
+                                        <ul class="menu">
+                                            <li><i class="fa fa-map-marker"
+                                                    style="padding-right:25px; width: 15px; height: 25px;"></i><a>East
+                                                    Kallada, Kollam -691502, Kerala, India</a></li>
+                                            <li><i class="fa fa-envelope"
+                                                    style="padding-right:25px; width: 15px; height: 25px;"></i><a>abvpakkattu@gmail.com</a>
+                                            </li>
+                                            <li><i class="fa fa-phone"
+                                                    style="padding-right:25px; width: 15px; height: 25px;"></i><a>(+91)
+                                                    8281331967</a></li>
+                                            <li><i class="fa fa-clock-o"
+                                                    style="padding-right:25px; width: 15px; height: 25px;"></i><a>8.30 -
+                                                    9.30</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom Container -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 copyright-w">
+                            <div class="copyright">
+                                Designed by <a href="http://www.shinuvarghese.info/" target="_blank">SHINU VARGHESE</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-5 col-sm-12 col-xs-12 payment-w">
+                            <img src="image/catalog/demo/payment/payment.png" alt="imgpayment">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /Footer Bottom Container -->
+
+
+            <!--Back To Top-->
+            <div class="back-to-top"><i class="fa fa-angle-up"></i></div>
+        </footer>
+        <!-- //end Footer Container -->
+
+    </div>
+
+
+
+
+
+    <!-- Include Libs & Plugins
+============================================ -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/slick-slider/slick.js"></script>
+    <script type="text/javascript" src="js/themejs/libs.js"></script>
+    <script type="text/javascript" src="js/unveil/jquery.unveil.js"></script>
+    <script type="text/javascript" src="js/countdown/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
+    <script type="text/javascript" src="js/datetimepicker/moment.js"></script>
+    <script type="text/javascript" src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/modernizr/modernizr-2.6.2.min.js"></script>
+    <script type="text/javascript" src="js/minicolors/jquery.miniColors.min.js"></script>
+
+    <!-- Theme files
+============================================ -->
+
+    <script type="text/javascript" src="js/themejs/application.js"></script>
+
+    <script type="text/javascript" src="js/themejs/homepage.js"></script>
+
+    <script type="text/javascript" src="js/themejs/toppanel.js"></script>
+    <script type="text/javascript" src="js/themejs/so_megamenu.js"></script>
+    <script type="text/javascript" src="js/themejs/addtocart.js"></script>
+
+
+
+
+</body>
+
+</html>
